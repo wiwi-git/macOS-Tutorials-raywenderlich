@@ -12,6 +12,9 @@
 		9706585228F942E000617165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9706585128F942E000617165 /* Assets.xcassets */; };
 		9706585528F942E000617165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9706585328F942E000617165 /* Main.storyboard */; };
 		9706585D28F9504500617165 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706585C28F9504500617165 /* PrefsViewController.swift */; };
+		9706586128F9579B00617165 /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706586028F9579B00617165 /* EggTimer.swift */; };
+		9706586328F9646100617165 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9706586228F9646100617165 /* Preferences.swift */; };
+		9706586728F96C8000617165 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9706586628F96C8000617165 /* ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9706585428F942E000617165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9706585628F942E000617165 /* EggTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
 		9706585C28F9504500617165 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		9706586028F9579B00617165 /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
+		9706586228F9646100617165 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		9706586628F96C8000617165 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,32 @@
 			isa = PBXGroup;
 			children = (
 				9706584D28F942E000617165 /* AppDelegate.swift */,
-				9706584F28F942E000617165 /* ViewController.swift */,
-				9706585128F942E000617165 /* Assets.xcassets */,
+				9706585E28F9574A00617165 /* View Controllers */,
+				9706585F28F9576800617165 /* Model */,
 				9706585328F942E000617165 /* Main.storyboard */,
-				9706585C28F9504500617165 /* PrefsViewController.swift */,
+				9706586628F96C8000617165 /* ding.mp3 */,
+				9706585128F942E000617165 /* Assets.xcassets */,
 				9706585628F942E000617165 /* EggTimer.entitlements */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		9706585E28F9574A00617165 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9706584F28F942E000617165 /* ViewController.swift */,
+				9706585C28F9504500617165 /* PrefsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9706585F28F9576800617165 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9706586028F9579B00617165 /* EggTimer.swift */,
+				9706586228F9646100617165 /* Preferences.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +149,7 @@
 			files = (
 				9706585228F942E000617165 /* Assets.xcassets in Resources */,
 				9706585528F942E000617165 /* Main.storyboard in Resources */,
+				9706586728F96C8000617165 /* ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9706585028F942E000617165 /* ViewController.swift in Sources */,
+				9706586128F9579B00617165 /* EggTimer.swift in Sources */,
+				9706586328F9646100617165 /* Preferences.swift in Sources */,
 				9706585D28F9504500617165 /* PrefsViewController.swift in Sources */,
 				9706584E28F942E000617165 /* AppDelegate.swift in Sources */,
 			);
